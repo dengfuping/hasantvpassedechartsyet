@@ -9,7 +9,8 @@ script:
   - npm run lint
 deploy:
   provider: surge
-  project: /dist
+  project:
+    myPath: /dist
   skip_cleanup: true
   domain: hasantvpassedechartsyet.surge.sh
   on:
