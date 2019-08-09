@@ -71,7 +71,7 @@ class IndexPage extends React.Component {
         <github-corner />
         <p>Has AntV passed ECharts yet?</p>
         {antvStar === 0 || echartsStar === 0 ? (
-          <span>Loading...</span>
+          <div style={{ marginBottom: '1em' }}>Loading...</div>
         ) : (
           <div>
             {antvStar === echartsStar ? (
