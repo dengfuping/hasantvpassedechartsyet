@@ -7,10 +7,10 @@ node_js:
   - 10
 script:
   - npm run lint
+  - npm run build
 deploy:
   provider: surge
-  project:
-    myPath: /dist
+  project: ./dist/
   skip_cleanup: true
   domain: hasantvpassedechartsyet.surge.sh
   on:
