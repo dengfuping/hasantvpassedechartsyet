@@ -1,0 +1,14 @@
+notifications:
+  email:
+    - dengfuping_develop@163.com
+node_js:
+  - 9
+script:
+  - npm run lint
+deploy:
+  provider: surge
+  project: ./dist/
+  skip_cleanup: true
+  domain: hasantvpassedechartsyet.surge.sh
+  on:
+    branch: master
